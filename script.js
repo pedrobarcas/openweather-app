@@ -1,8 +1,6 @@
 async function searchCity(event){
   event.preventDefault();
   
-  const API_KEY = '2bdcb4c05e0ed5b4afa18402eebcb8b5';
-  
   const search = document.querySelector('#city');
   const city = document.getElementById('city');
   const city_name = document.getElementById('city-name');
@@ -21,6 +19,8 @@ async function searchCity(event){
   document.getElementById('temperature-min').innerHTML = `${data.main.temp_min}<sup>°c</sup>`;
   document.getElementById('humidity').innerText = data.main.humidity + '%';
   document.getElementById('wind').innerText = data.wind.speed + 'km/h';
+
+  changeTheme(data)
 }
 
 function getIcon(data){
@@ -44,4 +44,18 @@ function getIcon(data){
   }
   
   return icon
+}
+
+function changeTheme(data){
+    const state = data.weather[0].icon[2]
+
+    console.log(state)
+    if (state === 'd'){
+        document.body.classList.remove("dark-theme");
+    }
+
+    else{
+        document.body.classList.add("dark-theme")
+    }
+
 }

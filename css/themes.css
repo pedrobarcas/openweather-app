@@ -1,0 +1,17 @@
+:root{
+  --background-gradient: linear-gradient(180deg, #89cfff 0%, #2a5298 100%);
+    --background-main: white;
+    --text-color-info: white;
+    --background-color-info: #2a5298;
+    --text-color: black;
+    --border-color: gray;
+}
+
+.dark-theme{
+  --background-gradient: linear-gradient(180deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  --background-main: #1e1e1e;
+  --text-color-info: #e0e0e0;
+  --background-color-info: #333c4a;
+  --text-color: #e0e0e0;
+  --border-color: gray;
+}
