@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+}
+    
+body{
+  background-color: #F2F2F2;
+
+}
+
+
+.main-content{
+  position: relative;
+  padding-top: 7rem;
+}
+
+
+.main-header{
+  display: grid;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  font-family: "Libertinus Mono", monospace;
+  padding: 0 20px;
+  background-color: #1A1A1A;
+  height: 6rem;
+  color: white;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  margin-bottom: 4rem;
+
+}
+
+.main-header a{
+  text-decoration: none;
+  color: white;
+  
+}
+
+.main-header span{
+  font-size: min(1.5rem, 2rem, 2.5rem)
+  
+}
+
+.menu-bar{
+  justify-self: start;
+  
+}
+
+.main-logo{
+  justify-self: center;
+  
+}
+
+.search-bar{
+  justify-self: end;
+  
+}
+
+.list-recipes{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  
+}
+
+.recipe{
+  background-color: white;
+  width: 22rem;
+  height: 38rem;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+
+}
+
+.recipe:hover{
+  transform: scale(1.03);
+  transition: all 0.6s ease-in-out;
+  
+}
+
+.recipe-name{
+  margin-left: 1rem;
+  font-family: "Noto Sans JP", sans-serif;
+  
+}
+
+.recipe-image {
+  width: 100%;
+  height: 40%;
+  overflow: hidden;
+
+}
+
+.recipe-image img{
+  width: 100%;
+}
+
+.recipe-description{
+  font-family: "Noto Sans JP", sans-serif;
+  margin-left: 1.5rem;
+  color: gray;
+  opacity: 80%;
+  
+}
+
+.recipe-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1A1A1A;
+  width: 100%;
+  height: 3rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  
+}
+
+.recipe-footer a{
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.3rem;
+  text-decoration: none;
+  
+}
+
+.recipe-infos{
+  background-color: #F2F2F2;
+  width: 100%;
+  height: 20%;
+  
+}
+
+.recipe-infos-icons{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  
+}
+
+.recipe-infos-icon-clock{
+  justify-self: center;
+  
+}
+
+.recipe-infos-icon-kitchen-set{
+  justify-self: center;
+  
+}
+
+.recipe-infos-texts{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  
+}
+
+.recipe-infos-text-time{
+  justify-self: center;
+  
+}
+
+.recipe-infos-text-portion{
+  justify-self: center;
+  
+}
