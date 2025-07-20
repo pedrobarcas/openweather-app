@@ -17,6 +17,7 @@ body{
 
 h1{
   font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.5rem;
   
 }
 
@@ -31,7 +32,7 @@ h1{
   
   background-color:var(--background-main);
   border-radius: 10px;
-  height: 35rem;
+  height: 95%;
   width: 85%;
   max-width: 500px;
   padding: 1.5rem;
@@ -114,6 +115,7 @@ h1{
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 0.3rem;
+  font-size: 0.85rem;
   background-color: var(--background-main);
   font-family: "Montserrat", sans-serif;
   width: 90%;

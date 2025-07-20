@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Pedro Barcas (GitHub: @pedrobarcas)">
+  <meta name="description" content="Aplicativo de previsão do tempo simples e intuitivo, que exibe informações meteorológicas atuais e previsões para a sua localização.">
+  <title>Previsão do tempo</title>
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="themes.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <main>
+    <div class="main-content">
+      <div class="content">
+        <!-- Formulário de busca -->
+        <div class="main-form">
+          <i class="fa-solid fa-location-dot"></i>
+          <input type="text" id="city" placeholder="  Coloque sua localização">
+          <button id="search" onclick="searchSet()" aria-label="Buscar cidade">
+            <span class="fa-solid fa-magnifying-glass"></span>
+          </button>
+        </div>
+
+        <!-- Título da cidade -->
+        <div class="main-title">
+          <h1 id="city-name"></h1>
+        </div>
+
+        <!-- Temperatura atual -->
+        <div class="climate-info">
+          <p id="temperature">
+            <span class="fa-solid fa-cloud"></span> 32<sup>°c</sup>
+          </p>
+          <p id="sky">Céu info</p>
+        </div>
+
+        <!-- Informações adicionais -->
+        <div class="climate-infos">
+          <div class="temperature-max text-bar-info">
+            <span class="fa-solid fa-thermometer-half" style="color: #e74c3c"></span>
+            <p id="temperature-max">temp. max<sup>°c</sup></p>
+          </div>
+
+          <div class="temperature-min text-bar-info">
+            <span class="fa-solid fa-thermometer-half" style="color: #3498db"></span>
+            <p id="temperature-min">temp. min<sup>°c</sup></p>
+          </div>
+
+          <div class="humidity text-bar-info">
+            <span class="fa-solid fa-wind" style="color: #9b59b6"></span>
+            <p id="wind">wind</p>
+          </div>
+
+          <div class="wind text-bar-info">
+            <span class="fa-solid fa-tint" style="color: #3498db"></span>
+            <p id="humidity">humidity</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@cseitz/fontawesome-svg-duotone@1.0.1/index.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
